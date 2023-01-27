@@ -1,11 +1,12 @@
+
 #!/bin/bash
 
-git pull origin master
+git pull origin main
 
-date > version
+date +%Y-%m-%d-%H-%M-%S > version
 
 git add version
-git commit -m "added version file"
+git commit -m "Update version file"
 
-git push origin master
+git push origin main
 
